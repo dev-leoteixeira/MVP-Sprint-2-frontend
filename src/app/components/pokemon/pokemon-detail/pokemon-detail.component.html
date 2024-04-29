@@ -1,0 +1,47 @@
+<mat-dialog-content>
+  <div class="pokemon-detail" *ngIf="pokemon">
+    <div class="tittle">
+      <h1 class="name">{{ pokemon.name }}</h1>
+      <h2 class="number">Nº {{ pokemonId }}</h2>
+    </div>
+    <div class="pokemon-specifications">
+      <img class="pokemon-image" [src]="pokemonImageUrl" />
+      <div class="pokemon-specifications-list">
+        <ul>
+          <li>
+            <span class="span01">Altura</span>
+            <span class="span02">{{ pokemonHeight }} m</span>
+          </li>
+          <li>
+            <span class="span01">Peso</span>
+            <span class="span02">{{ pokemonWeight }} Kg </span>
+          </li>
+          <li>
+            <span class="span01">Habilidades</span>
+            <span class="span02">{{ pokemonAbilite }}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="type">Tipo</h3>
+
+    <div class="divButtons">
+      <div *ngFor="let name of pokemonType; let i = index">
+        <button class="{{ pokemonType[i].type.name }}" mat-raised-button>
+          {{ pokemonType[i].type.name }}
+        </button>
+      </div>
+    </div>
+
+    <h3 class="type">Fraquezas</h3>
+
+    <div class="divButtons">
+      <div *ngFor="let name of pokemonWeak; let i = index">
+        <button class="{{ pokemonWeak[i].name }}" mat-raised-button>
+          {{ pokemonWeak[i].name }}
+        </button>
+      </div>
+    </div>
+  </div>
+</mat-dialog-content>

@@ -1,0 +1,18 @@
+<div class="pokemon-list">
+  <div *ngFor="let pokemon of pokemonsData; index as i">
+    <div class="pokemon-card">
+      <div class="div-icons">
+        <button class="material-icons delete-icon" (click)="deletePokemon(id)">
+          delete
+        </button>
+        <button (click)="openDialog(pokemon.id)" class="material-icons info-icon">
+          info
+        </button>
+      </div>
+      <img [src]="catchImage(pokemon.id)" /><br />
+      <p class="number">N° {{ leadingZero(pokemon.id)}}</p>
+      <p class="name">{{ pokemon.name }}</p>
+      
+    </div>
+  </div>
+</div>

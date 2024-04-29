@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 40px;
+}
+mat-card {
+    width: 450px;
+    margin: 0 auto; /* Centraliza o card na tela */
+    padding: 20px; /* Adiciona um espaçamento interno ao card */
+    border-radius: 20px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+    margin-top: 80px;
+    background-color: rgb(255, 253, 132);
+       
+}
+
+
+
+mat-card-title{
+    display: flex;
+    justify-content: center;
+   
+}
+
+button {
+    margin-top: 20px; /* Adiciona um espaçamento superior */
+    padding: 10px 20px; /* Adiciona um preenchimento interno */
+    font-size: 1rem; /* Tamanho de fonte padrão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    background-color: #3b4cca; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
+}
+
+.div-buttons{
+    display: flex;
+    justify-content: center;
+}
